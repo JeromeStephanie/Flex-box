@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+main {
+    margin: auto;
+    max-width: 100%;
+}
+
+.heading {
+    word-break: break-all;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.heading p {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.padd-bottom {
+    padding-bottom: 20px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;    
+}
+
+.content {
+    text-align: center;
+    padding: 30px;
+    display: inline-block;
+}
+
+/* Responsive layout - makes a two column-layout instead of six columns for tablet size screen */
+@media screen and (max-width: 991px) {
+    .column {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other for smaller
+Screen */
+@media screen and (max-width: 767px) {
+    .column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
